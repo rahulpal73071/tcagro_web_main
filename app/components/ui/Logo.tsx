@@ -8,7 +8,6 @@ interface LogoProps {
 
 export default function Logo({ dark = false, size = "md" }: LogoProps) {
   const iconSize = size === "sm" ? "w-8 h-8" : size === "lg" ? "w-12 h-12" : "w-10 h-10";
-  const iconInner = size === "sm" ? "w-4 h-4" : size === "lg" ? "w-7 h-7" : "w-5 h-5";
   const nameSize = size === "sm" ? "text-base" : size === "lg" ? "text-xl" : "text-lg";
 
   return (

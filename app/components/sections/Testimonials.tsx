@@ -14,18 +14,16 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="section-wrap bg-white" style={{ paddingTop: "96px", paddingBottom: "96px" }}>
       <div className="inner">
-        {/* Header */}
         <div className="text-center reveal" style={{ maxWidth: 520, margin: "0 auto 52px" }}>
           <SectionLabel text="What People Say" center />
           <h2 className="font-display" style={{ fontSize: "clamp(1.9rem,3.5vw,2.9rem)", color: "var(--green-800)", lineHeight: 1.15, marginBottom: "12px" }}>
             Farmers &amp; Partners Trust Us
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#5a5a5a" }}>
-            Here is what farmers, investors, and partners say about working with us.
+            Placeholder — Here is what farmers, investors, and partners say about working with us.
           </p>
         </div>
 
-        {/* Cards */}
         <div className="testi-grid reveal" style={{ marginBottom: "32px" }}>
           {visible.map((t, i) => (
             <div key={`${t.name}-${i}`}
@@ -38,7 +36,9 @@ export default function Testimonials() {
                   <Star key={si} size={13} fill={t.featured ? "var(--green-300)" : "#f4a261"} stroke="none" />
                 ))}
               </div>
-              <div className="font-display" style={{ fontSize: "3.5rem", lineHeight: 1, color: t.featured ? "var(--green-400)" : "var(--green-300)", marginBottom: "4px" }}>"</div>
+              <div className="font-display" style={{ fontSize: "3.5rem", lineHeight: 1, color: t.featured ? "var(--green-400)" : "var(--green-300)", marginBottom: "4px" }}>
+                &ldquo;
+              </div>
               <p style={{ fontSize: "0.88rem", lineHeight: 1.7, fontStyle: "italic", marginBottom: "20px", color: t.featured ? "rgba(255,255,255,0.82)" : "#5a5a5a" }}>
                 {t.text}
               </p>
@@ -61,7 +61,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Navigation */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px" }}>
           <button onClick={prev} aria-label="Previous"
             style={{ width: 42, height: 42, borderRadius: "50%", border: "2px solid var(--beige-300)", background: "white", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--green-800)", transition: "all 0.25s" }}
