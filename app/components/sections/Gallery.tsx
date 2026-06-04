@@ -39,7 +39,7 @@ export default function Gallery() {
             </h2>
           </div>
           <p style={{ fontSize: "0.875rem", lineHeight: 1.7, color: "#5a5a5a", maxWidth: 340 }}>
-            Placeholder — A glimpse into our farms, nursery, protected cultivation, and farmer training activities.
+            A glimpse into our farms, nursery, protected cultivation, and farmer training activities.
           </p>
         </div>
 

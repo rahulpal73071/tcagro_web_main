@@ -147,65 +147,7 @@ export default function Nursery() {
           ))}
 
           {/* Capacity Spotlight Card */}
-          <div
-            style={{
-              borderRadius: "16px",
-              border: "1px solid rgba(255,255,255,0.09)",
-              background: "rgba(255,255,255,0.055)",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "36px 24px",
-              textAlign: "center",
-            }}
-          >
-            <div
-              className="font-display font-bold"
-              style={{
-                fontSize: "clamp(3rem,5vw,4rem)",
-                color: "var(--green-400)",
-                lineHeight: 1,
-                marginBottom: "10px",
-              }}
-            >
-              1M+
-            </div>
-
-            <p
-              style={{
-                fontSize: "0.85rem",
-                lineHeight: 1.6,
-                color: "rgba(255,255,255,0.58)",
-                marginBottom: "22px",
-              }}
-            >
-              Seedlings produced annually
-            </p>
-
-            <a
-              href="#contact"
-              style={{
-                display: "inline-flex",
-                background: "white",
-                color: "var(--green-800)",
-                borderRadius: "50px",
-                padding: "11px 24px",
-                fontSize: "0.82rem",
-                fontWeight: 700,
-                textDecoration: "none",
-                transition: "all 0.3s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "var(--green-100)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "white";
-              }}
-            >
-              Request Catalogue
-            </a>
-          </div>
+          
         </div>
 
         {/* Stats Strip */}

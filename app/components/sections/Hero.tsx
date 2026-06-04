@@ -92,19 +92,19 @@ export default function Hero() {
             style={{ padding: "7px 18px 7px 12px", background: "rgba(255,255,255,0.10)", borderColor: "rgba(255,255,255,0.18)", backdropFilter: "blur(10px)", animation: "fadeUp 0.8s ease both" }}>
             <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: "var(--green-400)", animation: "pulseRing 2.4s ease infinite" }} />
             <span className="text-xs font-semibold tracking-[0.14em] uppercase" style={{ color: "rgba(255,255,255,0.88)" }}>
-              Integrated Agriculture Solutions
+              Integrated Agriculture Solutions — From Seed to Sell
             </span>
           </div>
 
           <h1 className="font-display text-white"
             style={{ fontSize: "clamp(2.4rem,6vw,5rem)", lineHeight: 1.08, maxWidth: 780, marginBottom: "clamp(16px,3vh,24px)", textShadow: "0 2px 28px rgba(0,0,0,0.55)", animation: "fadeUp 0.8s 0.1s ease both", opacity: 0, animationFillMode: "forwards" }}>
-            Growing Agriculture Through{" "}
+            Transforming Farming Through{" "}
             <em style={{ color: "var(--green-300)", fontStyle: "italic" }}>Innovation</em>{" "}
-            and Sustainability
+            & Environmental Responsibility
           </h1>
 
           <p style={{ fontSize: "clamp(0.95rem,2vw,1.15rem)", color: "rgba(255,255,255,0.76)", lineHeight: 1.75, maxWidth: 520, fontWeight: 300, marginBottom: "clamp(28px,5vh,44px)", textShadow: "0 1px 14px rgba(0,0,0,0.45)", animation: "fadeUp 0.8s 0.22s ease both", opacity: 0, animationFillMode: "forwards" }}>
-            Tiera-Cielo Agro delivers end-to-end agricultural solutions from soil
+            Tiera & Cielo Agro delivers Seed to Sell agricultural solutions from soil
             to market, empowering farmers and transforming Indian agriculture.
           </p>
 

@@ -19,7 +19,7 @@ export default function Services() {
         <div className="text-center reveal" style={{ maxWidth: 560, margin: "0 auto 52px" }}>
           <SectionLabel text="What We Offer" center />
           <h2 className="font-display" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.9rem)", color: "var(--green-800)", lineHeight: 1.15, marginBottom: "14px" }}>
-            How We Help You Farm Better
+            Making Farming More Productive
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#5a5a5a" }}>
             Whether you need guidance on the field, quality inputs, or scientific testing, we have a service designed for that.

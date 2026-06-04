@@ -78,7 +78,7 @@ export default function About() {
             </h2>
             <div className="section-line" />
             <p className="leading-relaxed mb-6" style={{ fontSize: "0.95rem", color: "#4a4a4a" }}>
-              Tiera-Cielo Agro Private Limited is an integrated agriculture company
+              Tiera & Cielo Agro Private Limited is an integrated agriculture company
               that works at the intersection of traditional farming wisdom and modern agronomy.
               We don&apos;t just advise — we get on the field with you.
             </p>

@@ -26,13 +26,13 @@ export default function Logo({ dark = false, size = "md" }: LogoProps) {
           className={`font-display font-semibold ${nameSize} leading-tight`}
           style={{ color: dark ? "white" : "var(--green-800)" }}
         >
-          Tiera-Cielo Agro
+          Tiera & Cielo Agro
         </span>
         <span
           className="text-xs font-semibold tracking-widest uppercase mt-0.5"
           style={{ color: dark ? "rgba(255,255,255,0.55)" : "var(--earth-500)" }}
         >
-          Private Limited
+          Seed to Sell we have all
         </span>
       </div>
     </a>

@@ -5,8 +5,8 @@
 // ────────────────────────────────────────
 
 export const SITE = {
-  name: "Tiera-Cielo Agro",
-  fullName: "Tiera-Cielo Agro Private Limited",
+  name: "Tiera & Cielo Agro",
+  fullName: "Tiera & Cielo Agro Private Limited",
   tagline: "Private Limited",
   phone: "+91 8168368079",
   phoneAlt: "+91 8059195251",
@@ -23,7 +23,28 @@ export const SITE = {
   },
 };
 
+// ── Ventures & Partners ──────────────────────
+export const VENTURES = [
+  {
+    name: "Akshat's Farm",
+    type: "Venture",
+    logo: "/images/ventures/venture.png",
+    desc: "A brief description of this venture, what it does, where it operates, and how it connects to the Tiera-Cielo Agro ecosystem.",
+    details: ["Est. 20XX", "Haryana", "Placeholder Tag"],
+    exploreUrl: "#",
+  },
+];
 
+export const PARTNERS = [
+  {
+    name: "Akaaya Seeds",
+    type: "Partner",
+    logo: "/images/partners/partner.png",
+    desc: "A brief description of this partner organisation, what they do, and the nature of the partnership with Tiera-Cielo Agro.",
+    details: ["Partner Type", "Location", "Since 20XX"],
+    exploreUrl: "#",
+  },
+];
 // ── Navigation ──────────────────────────────
 export const NAV_LINKS = [
   { label: "Home", href: "#hero" },
@@ -38,9 +59,9 @@ export const NAV_LINKS = [
 
 // ── Hero Stats ───────────────────────────────
 export const HERO_STATS = [
-  { value: 10, suffix: "+", label: "Farms Managed" },
-  { value: 500, suffix: "+", label: "Farmers Supported" },
-  { value: 1, suffix: "M+ Plants", label: "Nursery Capacity" },
+  { value: 10, suffix: "+", label: "Farms Managing" },
+  { value: 1000, suffix: "+", label: "Farmers Supported" },
+  { value: 5, suffix: "M+ Plants", label: "Nursery Capacity" },
   { value: 10, suffix: "+", label: "Years of Experience" },
 ];
 
@@ -113,15 +134,10 @@ export const NURSERY_CATS = [
     desc: "Tomato, chilli, capsicum, cucumber, brinjal, cabbage, cauliflower, and 30+ other vegetable seedlings grown from certified hybrid seeds in cocopeat media.",
     img: "/images/vegetable_seedling.webp",
   },
-  {
-    tag: "Fruits",
-    title: "Fruit Plants",
-    desc: "Mango, guava, pomegranate, banana, papaya, and other fruit saplings produced using advanced grafting and budding for high-yield, early-bearing plants.",
-    img: "/images/fruit_plants.webp"
-  },
+  
   {
     tag: "Commercial",
-    title: "Commercial Nursery Plants",
+    title: "Commercial Nursery Seedlings",
     desc: "Bulk supply of quality planting material for institutional buyers, government schemes, FPOs, and large farm enterprises needing thousands of plants at once.",
     img:"/images/commercial.webp"
   },
@@ -131,21 +147,15 @@ export const NURSERY_CATS = [
     desc: "Seedlings raised entirely without synthetic inputs — perfect for organic certification journeys or farmers who want a clean, chemical-free start.",
     img:"/images/organic_seedling.webp"
   },
-  {
-    tag: "Seasonal",
-    title: "Seasonal Plants",
-    desc: "Right plant, right time. We align our nursery production with Kharif and Rabi calendars so your seedlings are ready exactly when you need them.",
-    img:"/images/seasonal.webp"
-  },
+  
 ];
 
 
 export const NURSERY_STATS = [
-  { value: "50+", label: "Vegetable Varieties" },
-  { value: "25+", label: "Fruit Varieties" },
+  { value: "25+", label: "Vegetable Varieties" },
   { value: "12 Months", label: "Year-Round Supply" },
-  { value: "100%", label: "Disease Certified" },
-  { value: "48 hrs", label: "Dispatch Lead Time" },
+  { value: "100%", label: "Certified Organic" },
+  { value: "Fastest delhivery", label: "Dispatch Lead Time" },
 ];
 
 
