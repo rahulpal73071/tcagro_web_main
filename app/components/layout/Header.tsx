@@ -6,15 +6,8 @@ import Logo from "../ui/Logo";
 import { NAV_LINKS } from "@/lib/data";
 
 export default function Header() {
-  const [scrolled, setScrolled]     = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive]         = useState("hero");
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   // Track which section is in view to highlight the correct nav link
   useEffect(() => {
@@ -43,18 +36,18 @@ export default function Header() {
     <>
       {/* ── Desktop sticky header ── */}
       <header
-        className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50"
         style={{
-          background: scrolled ? "rgba(250,246,240,0.97)" : "transparent",
-          backdropFilter: scrolled ? "blur(16px)" : "none",
-          boxShadow: scrolled ? "0 1px 24px rgba(26,61,43,0.09)" : "none",
+          background: "rgba(250,246,240,0.97)",
+          backdropFilter: "blur(16px)",
+          boxShadow: "0 1px 24px rgba(26,61,43,0.09)",
           paddingLeft: "var(--section-pad-x)",
           paddingRight: "var(--section-pad-x)",
         }}
       >
         <div
           className="max-w-[1200px] mx-auto flex items-center justify-between"
-          style={{ padding: scrolled ? "14px 0" : "20px 0", transition: "padding 0.3s" }}
+          style={{ padding: "14px 0" }}
         >
           <Logo />
 
@@ -88,7 +81,7 @@ export default function Header() {
           {/* Hamburger */}
           <button
             className="lg:hidden p-2 rounded-lg"
-            style={{ color: scrolled ? "var(--green-800)" : "white" }}
+            style={{ color: "var(--green-800)" }}
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >

@@ -20,11 +20,11 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <VenturesPartners />
         <About />
         <Farms />
         <Nursery />
         <Services />
+        <VenturesPartners />
         <Consultation />
         <WhyUs />
         {/* <Gallery /> */}

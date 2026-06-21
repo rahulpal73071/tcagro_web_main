@@ -43,6 +43,15 @@ const TEAM = [
     email: "testing@tcagro.com",
     initials: "PN",
   },
+  {
+    name: "Placeholder Name",
+    role: "Soil & Residue Testing Lead",
+    experience: "8+ years in lab diagnostics",
+    expertise: "Soil testing, chemical residue, crop diagnostics",
+    phone: "+91 XXXXX XXXXX",
+    email: "testing@tcagro.com",
+    initials: "PN",
+  },
 ];
 
 export default function Contact() {
@@ -63,64 +72,216 @@ export default function Contact() {
         </div>
 
         {/* Team cards */}
-        <div className="grid-4 reveal" style={{ marginBottom: "64px" }}>
-          {TEAM.map((member) => (
-            <div key={member.email}
-              style={{
-                background: "white", borderRadius: "16px", overflow: "hidden",
-                boxShadow: "var(--shadow-sm)", transition: "transform 0.3s, box-shadow 0.3s",
-              }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-5px)"; (e.currentTarget as HTMLElement).style.boxShadow = "var(--shadow-md)"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = ""; (e.currentTarget as HTMLElement).style.boxShadow = "var(--shadow-sm)"; }}>
+<div
+  className={
+    TEAM.length > 4
+      ? "team-scroll-container reveal"
+      : "grid-4 reveal"
+  }
+  style={{ marginBottom: "64px" }}
+>
+  {TEAM.map((member) => (
+    <div
+      key={member.email}
+      className={TEAM.length > 4 ? "team-card-scroll" : ""}
+      style={{
+        background: "white",
+        borderRadius: "16px",
+        overflow: "hidden",
+        boxShadow: "var(--shadow-sm)",
+        transition: "transform 0.3s, box-shadow 0.3s",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-5px)";
+        e.currentTarget.style.boxShadow = "var(--shadow-md)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "";
+        e.currentTarget.style.boxShadow = "var(--shadow-sm)";
+      }}
+    >
+      {/* Photo */}
+      <div
+        style={{
+          height: "180px",
+          overflow: "hidden",
+          background: "#f5f5f5",
+        }}
+      >
+        {member.img ? (
+          <img
+            src={member.img}
+            alt={member.name}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        ) : (
+          <div
+            className="img-ph"
+            style={{
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.1"
+            >
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span>Photo</span>
+          </div>
+        )}
+      </div>
 
-              {/* Photo placeholder */}
-              <div className="img-ph" style={{ height: "180px" }}>
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" />
-                </svg>
-                <span>Photo</span>
-              </div>
+      <div style={{ padding: "20px" }}>
+        <h3
+          className="font-display"
+          style={{
+            fontSize: "1.15rem",
+            color: "var(--green-800)",
+            marginBottom: "3px",
+          }}
+        >
+          {member.name}
+        </h3>
 
-              <div style={{ padding: "20px" }}>
-                {/* Name & role */}
-                <h3 className="font-display" style={{ fontSize: "1.15rem", color: "var(--green-800)", marginBottom: "3px" }}>
-                  {member.name}
-                </h3>
-                <div style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--earth-500)", textTransform: "uppercase", letterSpacing: "0.07em", marginBottom: "12px" }}>
-                  {member.role}
-                </div>
-
-                {/* Details */}
-                <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginBottom: "16px", paddingBottom: "16px", borderBottom: "1px solid var(--beige-300)" }}>
-                  <div style={{ fontSize: "0.78rem", color: "#5a5a5a" }}>
-                    <span style={{ fontWeight: 600, color: "var(--green-800)" }}>Experience: </span>{member.experience}
-                  </div>
-                  <div style={{ fontSize: "0.78rem", color: "#5a5a5a" }}>
-                    <span style={{ fontWeight: 600, color: "var(--green-800)" }}>Expertise: </span>{member.expertise}
-                  </div>
-                </div>
-
-                {/* Contact links */}
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <a href={`tel:${member.phone}`}
-                    style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.8rem", color: "#3a3a3a", textDecoration: "none", transition: "color 0.2s" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--green-600)"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#3a3a3a"; }}>
-                    <Phone size={13} style={{ color: "var(--green-600)", flexShrink: 0 }} />
-                    {member.phone}
-                  </a>
-                  <a href={`mailto:${member.email}`}
-                    style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.8rem", color: "#3a3a3a", textDecoration: "none", transition: "color 0.2s" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--green-600)"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#3a3a3a"; }}>
-                    <Mail size={13} style={{ color: "var(--green-600)", flexShrink: 0 }} />
-                    {member.email}
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div
+          style={{
+            fontSize: "0.75rem",
+            fontWeight: 700,
+            color: "var(--earth-500)",
+            textTransform: "uppercase",
+            letterSpacing: "0.07em",
+            marginBottom: "12px",
+          }}
+        >
+          {member.role}
         </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "6px",
+            marginBottom: "16px",
+            paddingBottom: "16px",
+            borderBottom: "1px solid var(--beige-300)",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "0.78rem",
+              color: "#5a5a5a",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "var(--green-800)",
+              }}
+            >
+              Experience:
+            </span>{" "}
+            {member.experience}
+          </div>
+
+          <div
+            style={{
+              fontSize: "0.78rem",
+              color: "#5a5a5a",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "var(--green-800)",
+              }}
+            >
+              Expertise:
+            </span>{" "}
+            {member.expertise}
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+          }}
+        >
+          <a
+            href={`tel:${member.phone}`}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              fontSize: "0.8rem",
+              color: "#3a3a3a",
+              textDecoration: "none",
+              transition: "color 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "var(--green-600)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#3a3a3a";
+            }}
+          >
+            <Phone
+              size={13}
+              style={{
+                color: "var(--green-600)",
+                flexShrink: 0,
+              }}
+            />
+            {member.phone}
+          </a>
+
+          <a
+            href={`mailto:${member.email}`}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              fontSize: "0.8rem",
+              color: "#3a3a3a",
+              textDecoration: "none",
+              transition: "color 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "var(--green-600)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#3a3a3a";
+            }}
+          >
+            <Mail
+              size={13}
+              style={{
+                color: "var(--green-600)",
+                flexShrink: 0,
+              }}
+            />
+            {member.email}
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
         {/* Contact info strip */}
         <div className="reveal" style={{
@@ -191,17 +352,55 @@ export default function Contact() {
 </div>
         </div>
       </div>
+<style>{`
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      <style>{`
-        .contact-info-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        @media (max-width: 640px) {
-          .contact-info-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
+  /* Horizontal team scroll */
+  .team-scroll-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .team-scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 999px;
+  }
+
+  .team-card-scroll {
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 768px) {
+    .team-card-scroll {
+      min-width: 280px;
+      max-width: 280px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .contact-info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .team-card-scroll {
+      min-width: 260px;
+      max-width: 260px;
+    }
+  }
+`}</style>
     </section>
   );
 }

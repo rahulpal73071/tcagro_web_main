@@ -5,7 +5,7 @@
 // ────────────────────────────────────────
 
 export const SITE = {
-  name: "Tiera & Cielo Agro",
+  name: "Tiera & Cielo Agro Pvt Ltd",
   fullName: "Tiera & Cielo Agro Private Limited",
   tagline: "Private Limited",
   phone: "+91 8168368079",
