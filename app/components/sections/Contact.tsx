@@ -12,17 +12,17 @@ const TEAM = [
     phone: "+91 8168368079",
     email: "info@tcagro.com",
     initials: "AY",
-    img:"/images/ankush.png"
+    // img:"/images/ankush.png"
   },
   {
-    name: "Sunidhi Chaudary",
-    role: "Head — Nursery Operations",
+    name: "Sunidhi",
+    role: "Head Operations",
     experience: "7+ years in nursery management",
     expertise: "Vegetable seedlings, grafting, protected nursery",
     phone: "+91 XXXXX XXXXX",
     email: "nursery@tcagro.com",
     initials: "SC",
-    img:"/images/sunidhi.png"
+    // img:"/images/sunidhi.png"
   },
   {
     name: "Rahul Pal",
@@ -32,25 +32,36 @@ const TEAM = [
     phone: "+91 XXXXX XXXXX",
     email: "farms@tcagro.com",
     initials: "RP",
-    img:"/images/rahul.png"
+    // img:"/images/rahul.png"
   },
   {
-    name: "Placeholder Name",
-    role: "Soil & Residue Testing Lead",
-    experience: "8+ years in lab diagnostics",
-    expertise: "Soil testing, chemical residue, crop diagnostics",
+    name: "Rajnish Raj",
+    role: "Freelancer Agronomist",
+    experience: "2.5 yrs experience",
+    expertise: "Bsc Agriculture graduate, currently working with Pi industry MNC in India",
     phone: "+91 XXXXX XXXXX",
     email: "testing@tcagro.com",
-    initials: "PN",
+    initials: "RR",
+    img:"/images/rajneesh_raj.jpeg"
   },
   {
-    name: "Placeholder Name",
-    role: "Soil & Residue Testing Lead",
-    experience: "8+ years in lab diagnostics",
+    name: "Rahul Saini",
+    role: "farm manager, meerut",
+    experience: "2+ years experience",
     expertise: "Soil testing, chemical residue, crop diagnostics",
-    phone: "+91 XXXXX XXXXX",
-    email: "testing@tcagro.com",
-    initials: "PN",
+    phone: "+91 8306278730",
+    email: "rahulsaini3104@gmail.com",
+    initials: "RS",
+    img:"/images/rahul_saini.jpeg"
+  },
+  {
+    name: "Sunil Saini",
+    role: "farm manager, karnal ",
+    experience: "2+ years experience",
+    expertise: "Soil testing, chemical residue, crop diagnostics",
+    // phone: "+91 8306278730",
+    email: "sunin@tcagro.com",
+    initials: "SS",
   },
 ];
 
@@ -341,7 +352,7 @@ export default function Contact() {
   }}
 >
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2266.659923166288!2d76.33126873126562!3d28.3222907357876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDE5JzIwLjUiTiA3NsKwMTknNTIuNSJF!5e0!3m2!1sen!2sin!4v1780381797928!5m2!1sen!2sin"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210.30912488607402!2d76.65127571580996!3d28.20654676051195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d45c17c3a1fa1%3A0x4e4f0142c0716c87!2sShiv%20nagar%20part%202!5e1!3m2!1sen!2sin!4v1783186871860!5m2!1sen!2sin"
     width="100%"
     height="100%"
     style={{ border: 0 }}

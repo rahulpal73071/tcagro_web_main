@@ -116,7 +116,7 @@ export default function VenturesPartners() {
             Ventures &amp; Partners
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#5a5a5a" }}>
-            Tiera & Cielo Agro operates through focused ventures and works alongside trusted partners to deliver complete seed to sell agricultural solutions.
+            Tiera and Cielo Agro operates through focused ventures and works alongside trusted partners to deliver complete seed to sell agricultural solutions.
           </p>
         </div>
 

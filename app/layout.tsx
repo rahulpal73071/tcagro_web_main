@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import LoadingScreen from "./components/ui/LoadingScreen";
 
 export const metadata: Metadata = {
-  title: "Tiera-Cielo Agro Private Limited | Integrated Agriculture Solutions",
+  title: "Tiera and Cielo Agro Private Limited | Integrated Agriculture Solutions",
   description:
     "Leading integrated agriculture company specialising in organic farming, nursery, protected cultivation, agronomy consulting, chemical residue testing, and soil testing.",
   keywords:
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body suppressHydrationWarning>
+        <LoadingScreen />
+        {children}
+      </body>
     </html>
   );
 }

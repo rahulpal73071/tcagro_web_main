@@ -26,7 +26,7 @@ export default function Logo({ dark = false, size = "md" }: LogoProps) {
           className={`font-display font-semibold ${nameSize} leading-tight`}
           style={{ color: dark ? "white" : "var(--green-800)" }}
         >
-          Tiera & Cielo Agro Pvt Ltd
+          Tiera and Cielo Agro Pvt Ltd
         </span>
         <span
           className="text-xs font-semibold tracking-widest uppercase mt-0.5"

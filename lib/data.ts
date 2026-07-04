@@ -5,14 +5,14 @@
 // ────────────────────────────────────────
 
 export const SITE = {
-  name: "Tiera & Cielo Agro Pvt Ltd",
-  fullName: "Tiera & Cielo Agro Private Limited",
+  name: "Tiera and Cielo Agro Pvt Ltd",
+  fullName: "Tiera and Cielo Agro Private Limited",
   tagline: "Private Limited",
   phone: "+91 8168368079",
   phoneAlt: "+91 8059195251",
   email: "info@tcagro.com",
   emailConsult: "T.c.agrocorp@gmail.com",
-  address: "Sihor Mahendergarh , Haryana",
+  address: "Shiv Nagar, Part 2, Delhi Road, Rewari, Rewari, Rewari – 123401, Haryana, India",
   hours: "Mon – Sat: 9 AM – 6 PM",
   social: {
     facebook: "#",
@@ -47,13 +47,12 @@ export const PARTNERS = [
 ];
 // ── Navigation ──────────────────────────────
 export const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Farms", href: "#farms" },
-  { label: "Nursery", href: "#nursery" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Our Oparations", href: "/farms-and-nursery" },
+  { label: "Services", href: "/services" },
+  // { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 

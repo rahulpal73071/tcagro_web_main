@@ -104,7 +104,7 @@ export default function Hero() {
           </h1>
 
           <p style={{ fontSize: "clamp(0.95rem,2vw,1.15rem)", color: "rgba(255,255,255,0.76)", lineHeight: 1.75, maxWidth: 520, fontWeight: 300, marginBottom: "clamp(28px,5vh,44px)", textShadow: "0 1px 14px rgba(0,0,0,0.45)", animation: "fadeUp 0.8s 0.22s ease both", opacity: 0, animationFillMode: "forwards" }}>
-            Tiera & Cielo Agro delivers Seed to Sell agricultural solutions from soil
+            Tiera and Cielo Agro delivers Seed to Sell agricultural solutions from soil
             to market, empowering farmers and transforming Indian agriculture.
           </p>
 
