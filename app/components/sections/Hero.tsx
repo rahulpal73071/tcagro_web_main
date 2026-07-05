@@ -95,11 +95,12 @@ export default function Hero() {
               Integrated Agriculture Solutions — From Seed to Sell
             </span>
           </div>
-        
-          <h1 className="font-display text-white"
-            style={{ fontSize: "clamp(2.4rem,6vw,5rem)", lineHeight: 1.08, maxWidth: 780, marginBottom: "clamp(16px,3vh,24px)",marginTop: "clamp(16px , 3vh,24px)" , textShadow: "0 2px 28px rgba(0,0,0,0.55)", animation: "fadeUp 0.8s 0.1s ease both", opacity: 0, animationFillMode: "forwards" }}>
-            आधुनिक सोच, हरित खेती और प्रकृति के प्रति समर्पण।
 
+          <h1 className="font-display text-white"
+            style={{ fontSize: "clamp(2.4rem,6vw,5rem)", lineHeight: 1.08, maxWidth: 780, marginBottom: "clamp(16px,3vh,24px)", textShadow: "0 2px 28px rgba(0,0,0,0.55)", animation: "fadeUp 0.8s 0.1s ease both", opacity: 0, animationFillMode: "forwards" }}>
+            Transforming Farming Through{" "}
+            <em style={{ color: "var(--green-300)", fontStyle: "italic" }}>Innovation</em>{" "}
+            & Environmental Responsibility
           </h1>
 
           <p style={{ fontSize: "clamp(0.95rem,2vw,1.15rem)", color: "rgba(255,255,255,0.76)", lineHeight: 1.75, maxWidth: 520, fontWeight: 300, marginBottom: "clamp(28px,5vh,44px)", textShadow: "0 1px 14px rgba(0,0,0,0.45)", animation: "fadeUp 0.8s 0.22s ease both", opacity: 0, animationFillMode: "forwards" }}>
