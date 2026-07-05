@@ -20,7 +20,7 @@ export default function Testimonials() {
             Farmers &amp; Partners Trust Us
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#5a5a5a" }}>
-            Here is what farmers, investors, and partners say about working with us.
+            Here is what farmers and partners say about working with us.
           </p>
         </div>
 

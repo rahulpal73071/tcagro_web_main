@@ -17,7 +17,7 @@ export default function WhyUs() {
         <div className="text-center reveal" style={{ maxWidth: 560, margin: "0 auto 52px" }}>
           <SectionLabel text="Our Advantage" light center />
           <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem,3.5vw,2.9rem)", lineHeight: 1.15, marginBottom: "14px" }}>
-            Why Farmers &amp; Investors Choose Us
+            Why Farmers Choose Us
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "rgba(255,255,255,0.6)" }}>
             We earn trust the old-fashioned way — by showing up, doing the work, and delivering real results.

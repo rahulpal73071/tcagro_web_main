@@ -28,9 +28,9 @@ export const VENTURES = [
   {
     name: "Akshat's Farm",
     type: "Venture",
-    logo: "/images/ventures/venture.png",
-    desc: "A brief description of this venture, what it does, where it operates, and how it connects to the Tiera-Cielo Agro ecosystem.",
-    details: ["Est. 20XX", "Haryana", "Placeholder Tag"],
+    logo: "/images/akshat_farms.jpeg",
+    desc: "Akshat's Farm is a venture of Tiera and Cielo Agro Pvt Ltd where It's main Aim is to persent the role model of Sustainable and Safe food production via regenerative agriculture technique. Focus on production of safe food (organic) so that food you eat is chemical residue free.",
+    details: ["Est. 2026", "Haryana", "It's just not a cultivation it's Emotions"],
     exploreUrl: "#",
   },
 ];
@@ -39,9 +39,25 @@ export const PARTNERS = [
   {
     name: "Akaaya Seeds",
     type: "Partner",
-    logo: "/images/partners/partner.png",
-    desc: "A brief description of this partner organisation, what they do, and the nature of the partnership with Tiera-Cielo Agro.",
-    details: ["Partner Type", "Location", "Since 20XX"],
+    logo: "/images/akaaya_seed.png",
+    desc: "From Seed to Success,Growing Together with Akaaya Seeds, They provide quality seeds and agri inputs to us.",
+    details: ["provider of seeds and input", "Parsvnath City, Rewari, Haryana", "Since 2026"],
+    exploreUrl: "https://www.akaayaseeds.com",
+  },
+  {
+    name: "AWE Machinary",
+    type: "Collaboration",
+    logo: "/images/awe_power.jpeg",
+    desc: "High-quality agricultural equipment designed specifically for Indian farming conditions. Trusted by farmers across the country.",
+    details: ["provider of agri equipments ", "एग्रीकल्चर रोड, दिल्ली, भारत", "Since 2026"],
+    exploreUrl: "https://www.theaweshop.in/",
+  },
+  {
+    name: "Sundrah Organic",
+    type: "Partner",
+    logo: "/images/sundrah_organic.jpeg",
+    desc: "Together with Tiera and Cielo Agro Private Limited, they cultivate chemical-free, organic produce that cares for both people and the planet.",
+    details: ["Provide farms", "Pure Organic farming", "Since 2026"],
     exploreUrl: "#",
   },
 ];
@@ -213,7 +229,7 @@ export const WHY_US = [
   {
     num: "04",
     title: "Professional Farm Management",
-    desc: "Landowners and investors trust us to run their farms profitably and transparently. We treat your land like our own.",
+    desc: "Landowners trust us to run their farms profitably and transparently. We treat your land like our own.",
   },
   {
     num: "05",

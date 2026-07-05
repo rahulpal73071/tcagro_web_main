@@ -9,114 +9,67 @@ export default function About() {
   return (
     <section id="about" className="section-wrap bg-white" style={{ paddingTop: "96px", paddingBottom: "96px" }}>
       <div className="inner">
-        <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "56px", alignItems: "center" }}
-          className="lg-two-col">
-
-          {/* ── Left: image block ── */}
-          <div className="reveal" style={{ position: "relative" }}>
-            <div
-  className="rounded-2xl overflow-hidden"
-  style={{ height: "420px" }}
->
-  <img
-    src="https://imgs.search.brave.com/iA2IEYKZ3Xd6Pep0-St9FH-wOxdQKUfdG9vau9Lg2UU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTUw/MTk4NDM2Mi9waG90/by9mYXJtZXItZXhh/bWluaW5nLXN1bmZs/b3dlci1zZWVkbGlu/Z3MtYXQtc3Vuc2V0/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1BbTdFRHcyTzE2/dlAzODdxSUdNdGQw/U2ljN21nWmtsc1lD/QjhUOHdRM1RVPQ"
-    alt="Agriculture"
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-    }}
-  />
-</div>
-            {/* Accent thumbnail — hidden on small screens to prevent overflow */}
-            <div
-  className="img-ph rounded-xl about-accent-img"
-  style={{
-    width: "170px",
-    height: "170px",
-    borderRadius: "12px",
-    border: "5px solid white",
-    boxShadow: "var(--shadow-lg)",
-    position: "absolute",
-    bottom: "-28px",
-    right: "-24px",
-    overflow: "hidden",
-  }}
->
-  <img
-    src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
-    alt="Plant growth"
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      display: "block",
-    }}
-  />
-</div>
-            {/* Badge */}
-            <div className="about-badge" style={{
-              position: "absolute", top: "28px", left: "-18px",
-              background: "var(--green-800)", color: "white",
-              borderRadius: "12px", padding: "14px 18px",
-              boxShadow: "var(--shadow-md)",
-            }}>
-              <div className="font-display" style={{ fontSize: "2rem", fontWeight: 700, lineHeight: 1 }}>10+</div>
-              <div style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", opacity: 0.75, marginTop: "4px" }}>
-                Years of Excellence
-              </div>
-            </div>
-          </div>
-
-          {/* ── Right: text ── */}
-          <div className="reveal reveal-d2">
+        
+        {/* ── Main Two-Column Grid (Text Left, Images Right) ── */}
+        <div 
+          className="lg-two-col" 
+          style={{ display: "grid", gridTemplateColumns: "1fr", gap: "64px", alignItems: "center" }}
+        >
+          
+          {/* ── Left: Narrative & Values ── */}
+          <div className="reveal">
             <SectionLabel text="Who We Are" />
-            <h2 className="font-display leading-tight mb-4"
-              style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.9rem)", color: "var(--green-800)" }}>
+            <h2 
+              className="font-display leading-tight mb-4"
+              style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.9rem)", color: "var(--green-800)" }}
+            >
               A Vision Rooted in the Soil,{" "}
               <span style={{ display: "block" }}>Reaching for the Sky</span>
             </h2>
             <div className="section-line" />
-            <p className="leading-relaxed mb-6" style={{ fontSize: "0.95rem", color: "#4a4a4a" }}>
+            <p className="leading-relaxed mb-8" style={{ fontSize: "0.95rem", color: "#4a4a4a" }}>
               Tiera and Cielo Agro Private Limited is an integrated agriculture company
               that works at the intersection of traditional farming wisdom and modern agronomy.
               We don&apos;t just advise — we get on the field with you.
             </p>
 
-            {/* Vision & Mission */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "24px" }}
-              className="vm-grid">
-              {[
-                { title: "Our Vision", text: "To be the most trusted agricultural enterprise in India, driving sustainable food systems for future generations." },
-                { title: "Our Mission", text: "Empowering farmers with technology, knowledge, and quality inputs to achieve maximum productivity, sustainably." },
-              ].map((item) => (
-                <div key={item.title} style={{ paddingLeft: "14px", borderLeft: "3px solid var(--green-400)" }}>
-                  <h4 style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--green-600)", marginBottom: "6px" }}>
-                    {item.title}
-                  </h4>
-                  <p style={{ fontSize: "0.82rem", lineHeight: 1.6, color: "#5a5a5a" }}>{item.text}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Value cards — 2 per row, no overflow */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "28px" }}
-              className="val-grid">
+            {/* Value Cards — Horizontal layout (Icon Left, Text Right) */}
+            <div 
+              className="val-grid" 
+              style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px", marginBottom: "32px" }}
+            >
               {ABOUT_VALUES.map((val) => (
-                <div key={val.title} className="val-card"
-                  style={{ background: "var(--beige-200)", borderRadius: "12px", padding: "18px 16px", cursor: "default", transition: "all 0.3s" }}>
-                  <div className="val-icon" style={{
-                    width: 38, height: 38, borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center",
-                    marginBottom: "12px", background: "var(--green-200)", color: "var(--green-800)", transition: "all 0.3s",
-                  }}>
-                    <Icon name={val.icon} size={17} />
+                <div 
+                  key={val.title} 
+                  className="val-card"
+                  style={{ 
+                    background: "var(--beige-200)", 
+                    borderRadius: "14px", 
+                    padding: "16px", 
+                    cursor: "default", 
+                    transition: "all 0.3s",
+                    display: "flex",
+                    gap: "14px",
+                    alignItems: "flex-start"
+                  }}
+                >
+                  <div 
+                    className="val-icon" 
+                    style={{
+                      width: 42, height: 42, borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center",
+                      background: "var(--green-200)", color: "var(--green-800)", transition: "all 0.3s", flexShrink: 0
+                    }}
+                  >
+                    <Icon name={val.icon} size={20} />
                   </div>
-                  <h4 className="val-title" style={{ fontSize: "0.85rem", fontWeight: 600, marginBottom: "5px", color: "var(--green-800)", transition: "color 0.3s" }}>
-                    {val.title}
-                  </h4>
-                  <p className="val-desc" style={{ fontSize: "0.78rem", lineHeight: 1.55, color: "#6a6a6a", transition: "color 0.3s" }}>
-                    {val.desc}
-                  </p>
+                  <div>
+                    <h4 className="val-title" style={{ fontSize: "0.9rem", fontWeight: 600, marginBottom: "4px", color: "var(--green-800)", transition: "color 0.3s" }}>
+                      {val.title}
+                    </h4>
+                    <p className="val-desc" style={{ fontSize: "0.78rem", lineHeight: 1.5, color: "#6a6a6a", transition: "color 0.3s" }}>
+                      {val.desc}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -125,7 +78,87 @@ export default function About() {
               Explore Our Services <span aria-hidden="true">→</span>
             </Button>
           </div>
+
+          {/* ── Right: Asymmetrical "Bento" Image Collage ── */}
+          <div className="reveal reveal-d2" style={{ position: "relative", paddingRight: "20px", paddingBottom: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "12fr 5fr", gap: "16px", alignItems: "end" }}>
+              
+              {/* Primary Tall Image */}
+              <div className="rounded-2xl overflow-hidden" style={{ height: "460px", boxShadow: "var(--shadow-md)" }}>
+                <img
+                  src="https://imgs.search.brave.com/iA2IEYKZ3Xd6Pep0-St9FH-wOxdQKUfdG9vau9Lg2UU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTUw/MTk4NDM2Mi9waG90/by9mYXJtZXItZXhh/bWluaW5nLXN1bmZs/b3dlci1zZWVkbGlu/Z3MtYXQtc3Vuc2V0/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1BbTdFRHcyTzE2/dlAzODdxSUdNdGQw/U2ljN21nWmtsc1lD/QjhUOHdRM1RVPQ"
+                  alt="Agriculture"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
+
+              {/* Secondary Offset Image */}
+              <div className="rounded-2xl overflow-hidden about-accent-img" style={{ height: "280px", boxShadow: "var(--shadow-md)" }}>
+                <img
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+                  alt="Plant growth"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
+              </div>
+            </div>
+
+            {/* Floating Horizontal Stat Card */}
+            <div 
+              className="about-badge" 
+              style={{
+                position: "absolute", 
+                bottom: "0px", 
+                left: "20px",
+                background: "var(--green-800)", 
+                color: "white",
+                borderRadius: "16px", 
+                padding: "18px 24px",
+                boxShadow: "var(--shadow-lg)",
+                display: "flex",
+                alignItems: "center",
+                gap: "16px",
+                border: "4px solid white"
+              }}
+            >
+              <div className="font-display" style={{ fontSize: "2.5rem", fontWeight: 700, lineHeight: 1 }}>10+</div>
+              <div>
+                <div style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+                  Years of Excellence
+                </div>
+                <div style={{ fontSize: "0.7rem", opacity: 0.8 }}>Transforming Indian Agriculture</div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        {/* ── Bottom Section: Full-Width Vision & Mission Banner ── */}
+        <div 
+          className="reveal mt-16 rounded-2xl" 
+          style={{ 
+            background: "linear-gradient(135deg, var(--beige-200) 0%, rgba(45,106,79,0.05) 100%)", 
+            border: "1px solid var(--beige-300)",
+            padding: "36px" 
+          }}
+        >
+          <div className="vm-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px" }}>
+            {[
+              { title: "Our Vision", text: "To be the most trusted agricultural enterprise in India, driving sustainable food systems for future generations." },
+              { title: "Our Mission", text: "Empowering farmers with technology, knowledge, and quality inputs to achieve maximum productivity, sustainably." },
+            ].map((item) => (
+              <div key={item.title} style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                  <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--green-600)" }} />
+                  <h4 style={{ fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--green-800)", margin: 0 }}>
+                    {item.title}
+                  </h4>
+                </div>
+                <p style={{ fontSize: "0.95rem", lineHeight: 1.6, color: "#4a4a4a", margin: 0 }}>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       {/* ── Responsive CSS ── */}
@@ -135,20 +168,21 @@ export default function About() {
         }
         @media (min-width: 1024px) {
           .lg-two-col {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 80px !important;
+            grid-template-columns: 11fr 10fr !important;
+            gap: 72px !important;
           }
         }
         .about-accent-img, .about-badge {
-          display: none;
+          display: none !important;
         }
         @media (min-width: 768px) {
-          .about-accent-img, .about-badge { display: flex; }
-          .about-badge { display: block; }
+          .about-accent-img { display: block !important; }
+          .about-badge { display: flex !important; }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
           .val-grid, .vm-grid {
             grid-template-columns: 1fr !important;
+            gap: 20px !important;
           }
         }
         .val-card:hover {

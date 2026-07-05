@@ -5,20 +5,30 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const TEAM = [
   {
+    name: "Manjeet Yadav",
+    role: "Co-founder",
+    experience: "MSc biotechnology, Experience 4yrs in Agri innovation",
+    expertise: "Finace, Founder",
+    phone: "+91 8168368079",
+    email: "info@tcagro.com",
+    initials: "MY",
+    img:"/images/manjeet.jpeg"
+  },
+  {
     name: "Ankush Yadav",
-    role: "Founder & Chief Agronomist",
+    role: "Co-founder & Chief Agronomist",
     experience: "15+ years in field agronomy",
     expertise: "Organic farming, soil health, crop planning",
     phone: "+91 8168368079",
     email: "info@tcagro.com",
     initials: "AY",
-    // img:"/images/ankush.png"
+    img:"/images/ankush.jpeg"
   },
   {
-    name: "Sunidhi",
-    role: "Head Operations",
-    experience: "7+ years in nursery management",
-    expertise: "Vegetable seedlings, grafting, protected nursery",
+    name: "Sunidhi Chauhan",
+    role: "Chief Operating Officer",
+    experience: "MBA from IIT Bombay, 1 year Experience in Product Management",
+    expertise: "Operations Management",
     phone: "+91 XXXXX XXXXX",
     email: "nursery@tcagro.com",
     initials: "SC",
@@ -27,12 +37,12 @@ const TEAM = [
   {
     name: "Rahul Pal",
     role: "Cheif Technical Officer",
-    experience: "2+ years in technologi and logistics",
+    experience: "Chemical Engineer Student at IIT Bombay, 2+ years in tech and logistics",
     expertise: "Tech , Logistics ,farm leasing",
     phone: "+91 XXXXX XXXXX",
-    email: "farms@tcagro.com",
+    email: "info@tcagro.com",
     initials: "RP",
-    // img:"/images/rahul.png"
+    img:"/images/rahul_pal.jpeg"
   },
   {
     name: "Rajnish Raj",
@@ -57,11 +67,22 @@ const TEAM = [
   {
     name: "Sunil Saini",
     role: "farm manager, karnal ",
-    experience: "2+ years experience",
-    expertise: "Soil testing, chemical residue, crop diagnostics",
+    experience: "B.Com , 1 year agaate anzix farm as a business developer Coagri ventures pvt ltd 1 year ",
+    expertise: "Soil testing, Crop management, Crop Planing",
     // phone: "+91 8306278730",
-    email: "sunin@tcagro.com",
+    email: "sunil@tcagro.com",
     initials: "SS",
+    img:"/images/sunil_saini.jpeg"
+  },
+  {
+    name: "Vijay kumar",
+    role: "Head Procurement and Sales Output",
+    experience: "26 + year",
+    expertise: "Sales team",
+    phone: "+91 98135 66124",
+    email: "vijaysinghyadav612@gmail.com",
+    initials: "VK",
+    img:"/images/vijay.jpeg"
   },
 ];
 
