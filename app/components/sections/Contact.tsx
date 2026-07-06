@@ -32,7 +32,7 @@ const TEAM = [
     phone: "+91 XXXXX XXXXX",
     email: "nursery@tcagro.com",
     initials: "SC",
-    // img:"/images/sunidhi.png"
+    img:"/images/sunidhi_c.jpeg"
   },
   {
     name: "Rahul Pal",
@@ -57,7 +57,7 @@ const TEAM = [
   {
     name: "Rahul Saini",
     role: "farm manager, meerut",
-    experience: "2+ years experience",
+    experience: "M.Sc in agronomy, 3+ years experience",
     expertise: "Soil testing, chemical residue, crop diagnostics",
     phone: "+91 8306278730",
     email: "rahulsaini3104@gmail.com",
@@ -65,13 +65,13 @@ const TEAM = [
     img:"/images/rahul_saini.jpeg"
   },
   {
-    name: "Sunil Saini",
+    name: "Sunil Kumar Saini",
     role: "farm manager, karnal ",
     experience: "B.Com , 1 year agaate anzix farm as a business developer Coagri ventures pvt ltd 1 year ",
     expertise: "Soil testing, Crop management, Crop Planing",
     // phone: "+91 8306278730",
     email: "sunil@tcagro.com",
-    initials: "SS",
+    initials: "SKS",
     img:"/images/sunil_saini.jpeg"
   },
   {
@@ -95,7 +95,7 @@ export default function Contact() {
         <div className="text-center reveal" style={{ maxWidth: 520, margin: "0 auto 56px" }}>
           <SectionLabel text="Our Team" center />
           <h2 className="font-display" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.9rem)", color: "var(--green-800)", lineHeight: 1.15, marginBottom: "12px" }}>
-            Meet the People Behind the Farm
+            Meet the People Behind the Tiera and Cielo
           </h2>
           <p style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#5a5a5a" }}>
             Our team brings deep field experience, scientific knowledge, and
