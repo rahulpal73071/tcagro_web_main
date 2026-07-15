@@ -1,0 +1,102 @@
+export const TEAM = [
+  {
+    name: "Ankush Yadav",
+    role: "Co-founder & Chief Agronomist",
+    experience: "15+ years in field agronomy",
+    expertise: "Organic farming, soil health, crop planning",
+    phone: "+91 8168368079",
+    img: "/images/ankush.jpeg",
+  },
+  {
+    name: "Manjeet Yadav",
+    role: "Co-founder",
+    experience: "MSc Biotechnology, 4+ years in agri innovation",
+    expertise: "Finance, Founder",
+    phone: "+91 8168368079",
+    img: "/images/manjeet.jpeg",
+  },
+  {
+    name: "Sunidhi Chauhan",
+    role: "Chief Operating Officer",
+    experience: "MBA from IIT Bombay",
+    expertise: "Operations Management",
+    phone: "",
+    img: "/images/sunidhi_c.jpeg",
+  },
+  {
+    name: "Rahul Pal",
+    role: "Chief Technical Officer",
+    experience: "Chemical Engineering, IIT Bombay",
+    expertise: "Technology, Logistics, Farm Leasing",
+    phone: "",
+    img: "/images/rahul_pal.jpeg",
+  },
+  {
+    name: "Rajnish Raj",
+    role: "Freelance Agronomist",
+    experience: "2.5+ years experience, BSc Agriculture",
+    expertise: "Currently with a leading agri-input MNC",
+    phone: "",
+    img: "/images/rajneesh_raj.jpeg",
+  },
+  {
+    name: "Rahul Saini",
+    role: "Farm Manager, Meerut",
+    experience: "MSc Agronomy, 3+ years experience",
+    expertise: "Soil testing, chemical residue, crop diagnostics",
+    phone: "+91 8306278730",
+    img: "/images/rahul_saini.jpeg",
+  },
+  {
+    name: "Sunil Kumar Saini",
+    role: "Farm Manager, Karnal",
+    experience: "B.Com, 1+ years as business developer",
+    expertise: "Soil testing, crop management, crop planning",
+    phone: "",
+    img: "/images/sunil_saini.jpeg",
+  },
+  {
+    name: "Vijay Kumar",
+    role: "Head — Procurement & Sales",
+    experience: "26+ years experience",
+    expertise: "Sales team leadership",
+    phone: "+91 98135 66124",
+    img: "/images/vijay.jpeg",
+  },
+];
+
+export const VENTURES = [
+  {
+    name: "Akshat's Farm",
+    type: "Venture",
+    logo: "/images/akshat_farms.jpeg",
+    desc: "A venture of Tiera & Cielo Agro showing what regenerative, chemical-residue-free farming looks like in practice.",
+    since: "Est. 2026 · Haryana",
+  },
+];
+
+export const PARTNERS = [
+  {
+    name: "Akaaya Seeds",
+    type: "Partner",
+    logo: "/images/akaaya_seed.png",
+    desc: "Provides quality seeds and agri inputs — from seed to success, growing together.",
+    since: "Parsvnath City, Rewari, Haryana",
+    url: "https://www.akaayaseeds.com",
+  },
+  {
+    name: "AWE Machinery",
+    type: "Collaboration",
+    logo: "/images/awe_power.jpeg",
+    desc: "High-quality agricultural equipment designed for Indian farming conditions.",
+    since: "Delhi, India",
+    url: "https://www.theaweshop.in/",
+  },
+  {
+    name: "Sundrah Organic",
+    type: "Partner",
+    logo: "/images/sundrah_organic.jpeg",
+    desc: "Together we cultivate chemical-free, organic produce that cares for people and the planet.",
+    since: "Pure organic farming",
+  },
+];
