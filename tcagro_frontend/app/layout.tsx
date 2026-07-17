@@ -23,7 +23,7 @@ const mukta = Mukta({
 export const metadata: Metadata = {
   title: "Tiera & Cielo Agro | टिएरा एंड सिएलो एग्रो",
   description:
-    "Healthy seedlings and honest farming — nursery, farm produce, and agri inputs for farmers in Haryana. स्वस्थ पौध और ईमानदार खेती।",
+    "Seed to Sell. We have All. — nursery, farm produce, and agri inputs for farmers in Haryana. स्वस्थ पौध और ईमानदार खेती।",
   keywords:
     "seedlings, nursery, organic farming, Haryana farmer, agri inputs, पौध, नर्सरी, किसान",
 };
