@@ -8,6 +8,7 @@ const ITEMS = [
   { href: "/", icon: "🏠", key: "nav_home" as const },
   { href: "/products", icon: "🌱", key: "nav_products" as const },
   { href: "/farms-and-nursery", icon: "🚜", key: "nav_farms" as const },
+  { href: "/about", icon: "👥", key: "nav_about" as const },
   { href: "/#contact", icon: "📞", key: "nav_contact" as const },
 ];
 

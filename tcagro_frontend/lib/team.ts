@@ -52,7 +52,7 @@ export const TEAM = [
     role: "Farm Manager, Karnal",
     experience: "B.Com, 1+ years as business developer",
     expertise: "Soil testing, crop management, crop planning",
-    phone: "",
+    phone: "+91 7568865187",
     img: "/images/sunil_saini.jpeg",
   },
   {
@@ -62,6 +62,30 @@ export const TEAM = [
     expertise: "Sales team leadership",
     phone: "+91 98135 66124",
     img: "/images/vijay.jpeg",
+  },
+  {
+    name: "Vinod Kumar",
+    role: "Farm Manager, Sundrah R&D",
+    experience: "15+ years experience",
+    expertise: "Crop Planning and management",
+    phone: "+91 7877538914",
+    img: "/images/vinod.jpeg",
+  },
+  {
+    name: "Sanjay Kumar",
+    role: "Office Associate",
+    experience: "8+ years experience Horticulture department, Bhagwani ",
+    expertise: "Agronomist, Crop planning and management",
+    phone: "+91 80591 95251",
+    img: "/images/sanjay.jpeg",
+  },
+  {
+    name: "Sonu Malra",
+    role: "Farm Manager, Sundrah Organic",
+    experience: "5+ years experience in farm management",
+    expertise: "Crop planning and management",
+    phone: "+91 8398903744",
+    img: "/images/sonu.jpeg",
   },
 ];
 

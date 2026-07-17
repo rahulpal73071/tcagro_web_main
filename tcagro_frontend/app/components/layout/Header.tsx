@@ -36,7 +36,7 @@ export default function Header() {
       <div className="header-bar">
         <Link href="/" className="header-logo" onClick={() => setOpen(false)}>
           <img src="/images/logo.png" alt="Tiera & Cielo Agro" />
-          <span className="header-logo-text">T&amp;C Agro</span>
+          <span className="header-logo-text">T&amp;C Agro Pvt. Ltd.</span>
         </Link>
 
         <nav className="header-nav">

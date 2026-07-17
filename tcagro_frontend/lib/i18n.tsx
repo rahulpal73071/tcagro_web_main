@@ -17,7 +17,7 @@ const dict = {
     nav_about: "About Us",
     nav_contact: "Contact",
 
-    hero_title: "Healthy Seedlings.\nHonest Farming.",
+    hero_title: "Seed to Sell.\nWe have All.",
     hero_sub: "From our nursery to your field — good plants, fair prices, real people to call.",
     hero_cta_products: "See Products",
     hero_cta_farms: "See Our Farms",
@@ -140,7 +140,7 @@ const dict = {
     nav_about: "हमारे बारे में",
     nav_contact: "संपर्क करें",
 
-    hero_title: "स्वस्थ पौध।\nईमानदार खेती।",
+    hero_title: "बीज से बिक्री तक।\nहमारे पास सब कुछ है।",
     hero_sub: "हमारी नर्सरी से आपके खेत तक — अच्छे पौधे, सही दाम, बात करने के लिए असली लोग।",
     hero_cta_products: "उत्पाद देखें",
     hero_cta_farms: "हमारे फार्म देखें",

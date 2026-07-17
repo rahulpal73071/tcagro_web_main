@@ -11,7 +11,7 @@ export function Hero() {
     <section className="hero-organic section-wrap">
       <div className="inner hero-inner">
         <div className="hero-text">
-          <span className="eyebrow">🌾 Tiera &amp; Cielo Agro</span>
+          <span className="eyebrow">🌾 Tiera &amp; Cielo Agro Private Limited</span>
           <h1 className="hero-title">
             {t("hero_title").split("\n").map((line, i) => (
               <span key={i} style={{ display: "block" }}>{line}</span>

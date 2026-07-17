@@ -161,13 +161,13 @@ const DEMO_LOCATIONS: LocationSummary[] = [
 ];
 
 const DEMO_SETTINGS: SiteSettings = {
-  office_name_en: "Tiera & Cielo Agro", office_name_hi: "टिएरा एंड सिएलो एग्रो",
+  office_name_en: "Tiera & Cielo Agro Private Limited", office_name_hi: "टिएरा एंड सिएलो एग्रो",
   address_en: "Shiv Nagar, Part 2, Delhi Road, Rewari, Haryana – 123401",
   address_hi: "शिव नगर, भाग 2, दिल्ली रोड, रेवाड़ी, हरियाणा – 123401",
   latitude: "28.1994", longitude: "76.6188",
   phone_primary: "+91 8168368079", whatsapp_number: "918168368079", email: "info@tcagro.com",
   logo: "/images/logo.png",
-  tagline_en: "Growing trust, one seedling at a time",
+  tagline_en: "Seed to Sell, We have All",
   tagline_hi: "हर पौध के साथ भरोसा बढ़ाते हुए",
 };
 
